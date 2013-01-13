@@ -22,7 +22,7 @@ echo '<pre>';
 	print_r($value);
 echo '</pre>';
 
-//Check for link '/search', that whether it is allowed or not.
+//Check for link that whether it is allowed or not.
 $link = "/search";
 echo "/search". " is " . allowed($link,$value,'*') . '<br />';
 $link = "/catalogs/about";
