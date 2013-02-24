@@ -118,13 +118,13 @@ function rel2abs($base,$rel)
 \*======================================================================*/
 
 /*======================================================================*\
-	Function:	file_get_contents_curl
+	Function:	download_curl
 	Purpose:	It will get the html from the url
 	Input:		url
 	Output:		HTML
 \*======================================================================*/
 
-function file_get_contents_curl($url)
+function download_curl($url)
 {
 	$ch = curl_init();
 	
@@ -135,12 +135,11 @@ function file_get_contents_curl($url)
 	
 	$data = curl_exec($ch);
 	curl_close($ch);
-	$data = trim($data) . " ";
-	return $data;
+    return $data;
 }
 
 /*======================================================================*\
-	END OF Function file_get_contents_curl
+	END OF Function download_curl
 \*======================================================================*/
 
 /*======================================================================*\
@@ -153,6 +152,7 @@ function file_get_contents_curl($url)
 function robotstxt_parse($txt)
 {
 	global $url;
+	$txt = trim($txt) . " ";
 	preg_match_all("#(sitemap|allow|disallow|user-agent)\s*:\s*(.*?)\s+#is",$txt,$txt);
 	for($i=0;$i<=count($txt[1])-1;$i++)
 	{

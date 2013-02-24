@@ -12,7 +12,7 @@ $url = "http://" . $host . "/robots.txt";
 $rel2abs = false;
 
 //Fetch text from URL
-$txt = file_get_contents_curl($url);
+$txt = download_curl($url);
 
 //Convert Robottxt to Array
 $value = robotstxt_parse($txt);
