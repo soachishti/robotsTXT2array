@@ -13,3 +13,7 @@ Features:
 * Check for link in robot text to check whether it is allowed or not.
 * Regex Expression used only one time.
 * Fast.
+
+License:
+------------
+robotsTXT2array uses BSD 2-Clause License.
