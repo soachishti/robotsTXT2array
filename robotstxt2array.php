@@ -2,6 +2,7 @@
 /*
  * RobotsTXT2Array
  * Created January 13, 2013
+ * Location: https://github.com/soachishti/RobotsTXT2Array
  * 
  * Copyright (c) 2013, SOAChishti (soachishti@outlook.com).
  * All rights reserved.
